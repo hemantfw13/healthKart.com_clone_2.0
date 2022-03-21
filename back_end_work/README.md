@@ -1,1 +1,0 @@
-# healthkart-server
