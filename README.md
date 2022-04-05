@@ -70,7 +70,7 @@ In our website, we tried our best to clone same as original website.</p>
 
 <p >Amaresh Barik : <a href="https://github.com/amareshcoding">https://github.com/amareshcoding</a></p>
 <p >Arpit <a href="https://github.com/fabpot11">https://github.com/fabpot11</a></p>
-<p >Hemant Ahire </p>
+<p >Hemant Ahire <a href="https://github.com/hemantfw13/">https://github.com/hemantfw13/</a> </p>  
 
 <h2 >Our blog link :</h2>
 <p >
