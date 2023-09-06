@@ -1,12 +1,12 @@
-const express = require("express");
+const express = require('express');
 
 const router = express.Router();
 
-const Product = require("../models/product.model");
+const Product = require('../models/productModel');
 
 // ----------------------------------USER CRUD----------------------------------------//
 
-router.get("", async (req, res) => {
+router.get('', async (req, res) => {
   try {
     let item = await Product.find().lean().exec();
     return res.send(item);
@@ -15,7 +15,7 @@ router.get("", async (req, res) => {
   }
 });
 
-router.get("/:limit", async (req, res) => {
+router.get('/:limit', async (req, res) => {
   try {
     let item = await Product.find().limit(req.params.limit).lean().exec();
     return res.send(item);
@@ -23,7 +23,7 @@ router.get("/:limit", async (req, res) => {
     return res.status(500).send(e.message);
   }
 });
-router.get("/:id", async (req, res) => {
+router.get('/:id', async (req, res) => {
   try {
     let item = await Product.findById(req.params.id).lean().exec();
     return res.send(item);
@@ -32,7 +32,7 @@ router.get("/:id", async (req, res) => {
   }
 });
 
-router.post("", async (req, res) => {
+router.post('', async (req, res) => {
   try {
     let item = await Product.create(req.body);
 
@@ -42,7 +42,7 @@ router.post("", async (req, res) => {
   }
 });
 
-router.patch("/:id", async (req, res) => {
+router.patch('/:id', async (req, res) => {
   try {
     let item = await Product.findByIdAndUpdate(req.params.id, req.body, {
       new: true,
@@ -56,7 +56,7 @@ router.patch("/:id", async (req, res) => {
   }
 });
 
-router.delete("/:id", async (req, res) => {
+router.delete('/:id', async (req, res) => {
   try {
     let item = await Product.findByIdAndDelete(req.params.id).lean().exec();
     return res.send(item);

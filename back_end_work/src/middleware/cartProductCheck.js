@@ -1,4 +1,4 @@
-const Cart = require(`../models/cart.model`);
+const Cart = require(`../models/cartModel`);
 module.exports = async (req,res,next ) =>{
 
 
